@@ -1,0 +1,33 @@
+/* static/styles.css */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Inter', sans-serif;
+    color: #f8f8ff; /* Off-white color */
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333; /* Darker text for readability */
+}
+
+.button {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+}

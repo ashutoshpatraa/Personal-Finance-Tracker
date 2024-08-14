@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Add Transaction{% endblock %}
+{% block content %}
+<div class="card p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">Add Transaction</h1>
+    <form method="post">
+        <div class="mb-4">
+            <label for="amount" class="block text-gray-700">Amount:</label>
+            <input type="text" id="amount" name="amount" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div class="mb-4">
+            <label for="category" class="block text-gray-700">Category:</label>
+            <input type="text" id="category" name="category" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div class="mb-4">
+            <label for="date" class="block text-gray-700">Date (YYYY-MM-DD):</label>
+            <input type="text" id="date" name="date" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <button type="submit" class="button">Add</button>
+    </form>
+</div>
+{% endblock %}
