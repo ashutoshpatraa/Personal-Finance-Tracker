@@ -1,13 +1,40 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<div class="card p-6 rounded-lg shadow-lg">
-    <h1 class="text-3xl font-bold mb-4">Welcome to Finance Tracker</h1>
-    <p class="mb-4">Finance Tracker is your go-to tool for managing your personal finances. Here are some of the features you can use:</p>
-    <ul class="list-disc list-inside">
-        <li><strong>Add Transaction:</strong> Easily add your income and expenses to keep track of your financial activities.</li>
-        <li><strong>Visualize Data:</strong> Get a visual representation of your financial data to better understand your spending habits.</li>
-        <li><strong>Generate Report:</strong> Generate detailed reports to analyze your financial status and make informed decisions.</li>
+<div class="card p-6 rounded-lg shadow-lg bg-white">
+    <h1 class="text-3xl font-bold mb-4">Welcome to Finance Tracker!</h1>
+    <p class="mb-6">Your personal finance assistant, helping you stay on top of your finances effortlessly.</p>
+    
+    <h2 class="text-2xl font-bold mb-4">Features</h2>
+    <div class="mb-6">
+        <h3 class="text-xl font-semibold">Add Transactions</h3>
+        <p>Easily record your income and expenses to track your financial activities accurately.</p>
+    </div>
+    <div class="mb-6">
+        <h3 class="text-xl font-semibold">Visualize Your Finances</h3>
+        <p>Understand your spending habits with clear, interactive charts and graphs.</p>
+    </div>
+    <div class="mb-6">
+        <h3 class="text-xl font-semibold">Generate Detailed Reports</h3>
+        <p>Analyze your financial status with comprehensive reports and make informed decisions.</p>
+    </div>
+    
+    <h2 class="text-2xl font-bold mb-4">Getting Started is Easy!</h2>
+    <ol class="list-decimal list-inside mb-6">
+        <li><strong>Add Your Transactions:</strong> Begin by entering your income and expenses.</li>
+        <li><strong>View Visualizations:</strong> Explore charts and graphs to see where your money goes.</li>
+        <li><strong>Generate Reports:</strong> Create detailed reports to understand your financial health.</li>
+    </ol>
+    
+    <h2 class="text-2xl font-bold mb-4">Why Use Finance Tracker?</h2>
+    <ul class="list-disc list-inside mb-6">
+        <li><strong>Stay Organized:</strong> Keep all your financial data in one place.</li>
+        <li><strong>Make Informed Decisions:</strong> Use visualizations and reports to guide your financial choices.</li>
+        <li><strong>Save Time:</strong> Quickly track and analyze your finances with a few clicks.</li>
     </ul>
+    
+    <div class="text-center">
+        <a href="/add" class="button">Get Started</a>
+    </div>
 </div>
 {% endblock %}
