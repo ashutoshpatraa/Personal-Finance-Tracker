@@ -86,7 +86,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
-
-Ready to take control of your finances? Click the button below to get started!
-
-[Get Started](http://127.0.0.1:5000/add)

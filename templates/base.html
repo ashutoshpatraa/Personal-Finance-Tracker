@@ -7,18 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <nav class="navbar p-4 bg-white shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
+<body class="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 scrollbar-thin">
+    <nav class="navbar fixed top-0 left-0 right-0 p-4 bg-white bg-opacity-80 shadow-md z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
             <a href="/" class="text-gray-900 font-bold text-lg">Finance Tracker</a>
-            <div>
-                <a href="/add" class="text-blue-600 mx-2 hover:underline">Add Transaction</a>
-                <a href="/visualize" class="text-blue-600 mx-2 hover:underline">Visualize Data</a>
-                <a href="/report" class="text-blue-600 mx-2 hover:underline">Generate Report</a>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/add" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 mx-2 hover:underline">Add Transaction</a>
+                    <a href="/visualize" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 mx-2 hover:underline">Visualize Data</a>
+                    <a href="/report" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 mx-2 hover:underline">Generate Report</a>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="container mx-auto mt-4">
+    <div class="container mx-auto mt-20 px-4">
         {% block content %}{% endblock %}
     </div>
 </body>
